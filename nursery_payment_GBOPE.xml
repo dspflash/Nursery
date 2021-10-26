@@ -1,0 +1,37 @@
+﻿<GroupBox cols="xs12 sm12 md12 lg12" Name="GBOPEnursery_payment" Size="100,100"><Ctrls>
+<Button sqlpkinsert="id" Text="create" ToolTip="ttp_createnursery_payment" Name="insertnursery_payment" Size="50,20">
+	<OnClick>
+	<DbDetails mode="insert" fcsm="1">
+<DbTable>nursery.nursery_payment</DbTable>
+<Required>%{dataRequired}</Required>
+<Requireless>%{dataRequireless}</Requireless>
+<Data>rq,lsh,fph,ys,yh,ss,sqye,bqye,czy,zffs,bz,fines</Data>
+<DataEx/>
+<queryFormat>insert into %{table} %{data}</queryFormat></DbDetails>
+	<submit namelist="DbDetails"/><if cond="%{refreshAfterEdit}"><submit next="nursery_paymentLst"/></if>
+	</OnClick>
+	</Button><TAB/>
+<Button Text="modify" ToolTip="ttp_modifynursery_payment" Name="modifynursery_payment" Size="50,20">
+	<OnClick>
+	<DbDetails mode="update" fcsm="1">
+<DbTable>nursery.nursery_payment</DbTable>
+<Required>%{dataRequired}</Required>
+<Requireless>%{dataRequireless}</Requireless>
+<Data>rq,lsh,fph,ys,yh,ss,sqye,bqye,czy,zffs,bz,fines</Data>
+<DataEx/>
+<Where>id='%{id}'</Where>
+<queryFormat>update %{table} set %{data} where %{where}</queryFormat></DbDetails>
+	<submit namelist="DbDetails"/><if cond="%{refreshAfterEdit}"><submit next="nursery_paymentLst"/></if>
+	</OnClick>
+	</Button><TAB/>
+<Button Text="reset" ToolTip="ttp_resetnursery_payment" Name="resetnursery_payment" Size="50,20">
+	<OnClick>
+	<submit next="GBDEDITnursery_payment" function="reset"/>
+	</OnClick>
+	</Button><TAB/>
+<Button Text="gsearch" ToolTip="ttp_gsearchnursery_payment" Name="gsearchnursery_payment" Size="50,20" visible="false">
+	<OnClick>
+	<search next="nursery_paymentLst" listed="0" prefixwhere="0" inputed="1"><zone_id op="(" ref=""/></search><submit next="GBDEDITnursery_payment" namelist="search" function="search"/>
+	</OnClick>
+	</Button><TAB/>
+</Ctrls></GroupBox>

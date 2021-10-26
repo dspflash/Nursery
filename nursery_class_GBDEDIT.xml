@@ -1,0 +1,24 @@
+﻿<GroupBox Name="GBDEDITnursery_class"><Ctrls>
+<GroupBox cols="xs12 sm6 md4 lg3" Multiline="0" Name="GB_bm"><Ctrls>
+<Label Align="Right" Text="bm" Name="lb_bm" Size="60,20"/>
+<TextBox Weight="170" Text="" ToolTip="ttp_bm" Name="bm" Size="170,20"/>
+</Ctrls></GroupBox>
+<GroupBox cols="xs12 sm6 md4 lg3" Multiline="0" Name="GB_mc"><Ctrls>
+<Label Align="Right" Text="mc" Name="lb_mc" Size="60,20"/>
+<TextBox Weight="170" Text="" ToolTip="ttp_mc" Name="mc" Size="170,20"/>
+</Ctrls></GroupBox>
+<GroupBox cols="xs12 sm6 md4 lg3" Multiline="0" Name="GB_py"><Ctrls>
+<Label Align="Right" Text="py" Name="lb_py" Size="60,20"/>
+<TextBox Weight="170" Text="" ToolTip="ttp_py" Name="py" Size="170,20"/>
+</Ctrls></GroupBox>
+<BR AutoHeight="1"/><GroupBox cols="xs12 sm6 md4 lg3" Multiline="0" Name="GB_nj"><Ctrls>
+<Label Align="Right" Text="nj" onload="init" Name="lb_nj" Size="60,20"/>
+<ComboBox Weight="170" Text="" ToolTip="ttp_nj" onload="init" Name="nj" Size="170,100">
+	<DbDetails>
+<DbTable>nursery.nursery_grade</DbTable>
+<Index>bm</Index>
+<Data>mc,bm</Data>
+<Where/>
+<queryFormat/></DbDetails></ComboBox>
+</Ctrls></GroupBox>
+</Ctrls></GroupBox>

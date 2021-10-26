@@ -1,0 +1,54 @@
+﻿<GroupBox Name="GBDEDITnursery_payment"><Ctrls>
+<GroupBox Name="GB_rq" Multiline="0" cols="xs12 sm6 md4 lg3"><Ctrls>
+<Label Name="lb_rq" Size="60,20" Text="rq" Align="Right"/>
+<DateTime Name="rq" Format="yyyy-MM-dd HH:mm:ss" Size="170,20" Text="" Weight="170" ToolTip="ttp_rq"></DateTime>
+</Ctrls></GroupBox>
+<GroupBox Name="GB_lsh" Multiline="0" cols="xs12 sm6 md4 lg3"><Ctrls>
+<Label Name="lb_lsh" Size="60,20" Text="lsh" Align="Right"/>
+<TextBox Name="lsh" Size="170,20" Text="" Weight="170" ToolTip="ttp_lsh"></TextBox>
+</Ctrls></GroupBox>
+<GroupBox Name="GB_fph" Multiline="0" cols="xs12 sm6 md4 lg3"><Ctrls>
+<Label Name="lb_fph" Size="60,20" Text="fph" Align="Right"/>
+<TextBox Name="fph" Size="170,20" Text="" Weight="170" ToolTip="ttp_fph"></TextBox>
+</Ctrls></GroupBox>
+<BR AutoHeight="1"/><GroupBox Name="GB_ys" Multiline="0" cols="xs12 sm6 md4 lg3"><Ctrls>
+<Label Name="lb_ys" Size="60,20" Text="ys" Align="Right"/>
+<TextBox Name="ys" Size="170,20" Text="" Weight="170" ToolTip="ttp_ys"></TextBox>
+</Ctrls></GroupBox>
+<GroupBox Name="GB_yh" Multiline="0" cols="xs12 sm6 md4 lg3"><Ctrls>
+<Label Name="lb_yh" Size="60,20" Text="yh" Align="Right"/>
+<TextBox Name="yh" Size="170,20" Text="" Weight="170" ToolTip="ttp_yh"></TextBox>
+</Ctrls></GroupBox>
+<GroupBox Name="GB_ss" Multiline="0" cols="xs12 sm6 md4 lg3"><Ctrls>
+<Label Name="lb_ss" Size="60,20" Text="ss" Align="Right"/>
+<TextBox Name="ss" Size="170,20" Text="" Weight="170" ToolTip="ttp_ss"></TextBox>
+</Ctrls></GroupBox>
+<BR AutoHeight="1"/><GroupBox Name="GB_sqye" Multiline="0" cols="xs12 sm6 md4 lg3"><Ctrls>
+<Label Name="lb_sqye" Size="60,20" Text="sqye" Align="Right"/>
+<TextBox Name="sqye" Size="170,20" Text="" Weight="170" ToolTip="ttp_sqye"></TextBox>
+</Ctrls></GroupBox>
+<GroupBox Name="GB_bqye" Multiline="0" cols="xs12 sm6 md4 lg3"><Ctrls>
+<Label Name="lb_bqye" Size="60,20" Text="bqye" Align="Right"/>
+<TextBox Name="bqye" Size="170,20" Text="" Weight="170" ToolTip="ttp_bqye"></TextBox>
+</Ctrls></GroupBox>
+<GroupBox Name="GB_czy" Multiline="0" cols="xs12 sm6 md4 lg3"><Ctrls>
+<Label Name="lb_czy" Size="60,20" Text="czy" Align="Right"/>
+<TextBox Name="czy" Size="170,20" Text="" Weight="170" ToolTip="ttp_czy"></TextBox>
+</Ctrls></GroupBox>
+<BR AutoHeight="1"/><GroupBox Name="GB_zffs" Multiline="0" cols="xs12 sm6 md4 lg3"><Ctrls>
+<Label Name="lb_zffs" Size="60,20" Text="zffs" Align="Right"/>
+<TextBox Name="zffs" Size="170,20" Text="" Weight="170" ToolTip="ttp_zffs"></TextBox>
+</Ctrls></GroupBox>
+<GroupBox Name="GB_bz" Multiline="0" cols="xs12 sm6 md4 lg3"><Ctrls>
+<Label Name="lb_bz" Size="60,20" Text="bz" Align="Right"/>
+<TextBox Name="bz" Size="170,20" Text="" Weight="170" ToolTip="ttp_bz"></TextBox>
+</Ctrls></GroupBox>
+<GroupBox Name="GB_fines" Multiline="0" cols="xs12 sm6 md4 lg3"><Ctrls>
+<Label Name="lb_fines" Size="60,20" Text="fines" Align="Right"/>
+<TextBox Name="fines" Size="170,20" Text="" Weight="170" ToolTip="ttp_fines"></TextBox>
+</Ctrls></GroupBox>
+<GroupBox Name="GB_id" Multiline="0" cols="xs12 sm6 md4 lg3" Visible="false" overlap="pre"><Ctrls>
+<Label Name="lb_id" Size="60,20" Text="id" Align="Right" Visible="false" overlap="pre" readonly="true"/>
+<TextBox Name="id" Size="170,20" Text="" Weight="170" ToolTip="ttp_id" Visible="false" overlap="pre" readonly="true"><OnEnChange><if cond="'%{id}'"><SetVisible name="insertnursery_payment" Visible="0"/><SetVisible name="modifynursery_payment" Visible="1"/><else/><SetVisible name="insertnursery_payment" Visible="1"/><SetVisible name="modifynursery_payment" Visible="0"/></if></OnEnChange></TextBox>
+</Ctrls></GroupBox>
+</Ctrls></GroupBox>

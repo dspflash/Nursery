@@ -1,0 +1,12 @@
+﻿<GroupBox Name="GBDVnursery_acc_period" cols="xs12 sm12 md12 lg12" visible="0"><Ctrls>
+<ListCtrl Name="nursery_acc_periodLst" ToolTip="ttp_nursery_acc_period" Size="70,20" visible="0" loadedclick="1">
+	<DbDetails fcsm="1">
+<DbTable>nursery.nursery_acc_period</DbTable>
+<Index>periodid</Index>
+<Data>periodyear,periodmonth,daynum,cannum,bz,isnow,isover,periodid</Data>
+<Order>periodid</Order></DbDetails>
+<OnClick>
+<if cond="%{periodid}"><SetVisible name="insertnursery_acc_period" Visible="0"/><SetVisible name="modifynursery_acc_period" Visible="1"/></if>
+</OnClick>
+</ListCtrl>
+</Ctrls></GroupBox>

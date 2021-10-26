@@ -1,0 +1,17 @@
+﻿<GroupBox cols="xs12 sm12 md12 lg12" Name="GBOPVnursery_chargetplst" Size="100,100"><Ctrls>
+<Button Text="delete" ToolTip="ttp_deletenursery_chargetplst" Name="deletenursery_chargetplst" Size="50,20">
+	<OnClick>
+	<DbDetails fcsm="1">
+<DbTable>nursery.nursery_chargetplst</DbTable>
+<Where>id='%{nursery_chargetplstLst[id]}'</Where>
+<queryFormat>delete from %{table} where %{where}</queryFormat></DbDetails>
+	<submit namelist="DbDetails"/><submit next="searchnursery_chargetplst" function="click"/>
+	</OnClick>
+	</Button><TAB/>
+<Button Text="refresh" ToolTip="ttp_refreshnursery_chargetplst" Name="searchnursery_chargetplst" Size="50,20">
+			  <OnClick><submit next="nursery_chargetplstLst"/>	</OnClick>
+</Button>
+<TAB/><TAB/><Button Text="firstpage" Name="FPnursery_chargetplstLst" OnClick="(nursery_chargetplstLst)GetPage(First)" Size="50,20"/>
+<TAB/><Button Text="prepage" Name="PREnursery_chargetplstLst" OnClick="(nursery_chargetplstLst)GetPage(Pre)" Size="50,20"/>
+<TAB/><Button Text="nextpage" Name="NPnursery_chargetplstLst" OnClick="(nursery_chargetplstLst)GetPage(Next)" Size="50,20"/>
+</Ctrls></GroupBox>

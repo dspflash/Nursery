@@ -1,0 +1,12 @@
+﻿<GroupBox Name="GBDVnursery_children" cols="xs12 sm12 md12 lg12" visible="0"><Ctrls>
+<ListCtrl Name="nursery_childrenLst" ToolTip="ttp_nursery_children" Size="70,20" visible="0" loadedclick="1">
+	<DbDetails fcsm="1">
+<DbTable>nursery.nursery_children</DbTable>
+<Index>id</Index>
+<Data>bm,name,py,sex,birthday,mz,jg,address,nj,bj,bmrq,sfz,rxxs,sflx,mqname,mqtel,mqdw,fqname,fqtel,fqdw,zt,jsr,jskh,zsrq,czy,date,bz,yjze,yjye,id</Data>
+<Order>id</Order></DbDetails>
+<OnClick><assign name="nj[bm]" expr="%{nursery_childrenLst[nj]}" function="SetSel"/><assign name="bj[bm]" expr="%{nursery_childrenLst[bj]}" function="SetSel"/><assign name="sflx[bm]" expr="%{nursery_childrenLst[sflx]}" function="SetSel"/>
+<if cond="%{id}"><SetVisible name="insertnursery_children" Visible="0"/><SetVisible name="modifynursery_children" Visible="1"/></if>
+</OnClick>
+</ListCtrl>
+</Ctrls></GroupBox>

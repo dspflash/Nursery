@@ -1,0 +1,29 @@
+﻿<GroupBox Name="GBDEDITnursery_chargeitem"><Ctrls>
+<GroupBox cols="xs12 sm6 md4 lg3" Multiline="0" Name="GB_bm"><Ctrls>
+<Label Align="Right" Text="bm" Name="lb_bm" Size="60,20"/>
+<TextBox Weight="170" Text="" ToolTip="ttp_bm" Name="bm" Size="170,20"/>
+</Ctrls></GroupBox>
+<GroupBox cols="xs12 sm6 md4 lg3" Multiline="0" Name="GB_mc"><Ctrls>
+<Label Align="Right" Text="mc" Name="lb_mc" Size="60,20"/>
+<TextBox Weight="170" Text="" ToolTip="ttp_mc" Name="mc" Size="170,20"/>
+</Ctrls></GroupBox>
+<GroupBox cols="xs12 sm6 md4 lg3" Multiline="0" Name="GB_py"><Ctrls>
+<Label Align="Right" Text="py" Name="lb_py" Size="60,20"/>
+<TextBox Weight="170" Text="" ToolTip="ttp_py" Name="py" Size="170,20"/>
+</Ctrls></GroupBox>
+<BR AutoHeight="1"/><GroupBox cols="xs12 sm6 md4 lg3" Multiline="0" Name="GB_dw"><Ctrls>
+<Label Align="Right" Text="dw" Name="lb_dw" Size="60,20"/>
+<TextBox Weight="170" Text="" ToolTip="ttp_dw" Name="dw" Size="170,20"/>
+</Ctrls></GroupBox>
+<GroupBox cols="xs12 sm6 md4 lg3" Multiline="0" Name="GB_dj"><Ctrls>
+<Label Align="Right" Text="dj" Name="lb_dj" Size="60,20"/>
+<TextBox Weight="170" Text="" ToolTip="ttp_dj" Name="dj" Size="170,20"/>
+</Ctrls></GroupBox>
+<GroupBox cols="xs12 sm6 md4 lg3" Multiline="0" Name="GB_ty"><Ctrls>
+<CheckBox Text="ty" ToolTip="ttp_ty" Name="ty" Size="230,20"/>
+</Ctrls></GroupBox>
+<BR AutoHeight="1"/><GroupBox cols="xs12 sm6 md4 lg3" Multiline="0" Name="GB_bz"><Ctrls>
+<Label Align="Right" Text="bz" Name="lb_bz" Size="60,20"/>
+<TextBox Weight="170" Text="" ToolTip="ttp_bz" Name="bz" Size="170,20"/>
+</Ctrls></GroupBox>
+</Ctrls></GroupBox>

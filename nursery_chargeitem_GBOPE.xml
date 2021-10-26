@@ -1,0 +1,37 @@
+﻿<GroupBox cols="xs12 sm12 md12 lg12" Name="GBOPEnursery_chargeitem" Size="100,100"><Ctrls>
+<Button sqlpkinsert="bm" Text="create" ToolTip="ttp_createnursery_chargeitem" Name="insertnursery_chargeitem" Size="50,20">
+	<OnClick>
+	<DbDetails mode="insert" fcsm="1">
+<DbTable>nursery.nursery_chargeitem</DbTable>
+<Required>%{dataRequired}</Required>
+<Requireless>%{dataRequireless}</Requireless>
+<Data>bm,mc,py,dw,dj,ty,bz</Data>
+<DataEx/>
+<queryFormat>insert into %{table} %{data}</queryFormat></DbDetails>
+	<submit namelist="DbDetails"/><if cond="%{refreshAfterEdit}"><submit next="nursery_chargeitemLst"/></if>
+	</OnClick>
+	</Button><TAB/>
+<Button Text="modify" ToolTip="ttp_modifynursery_chargeitem" Name="modifynursery_chargeitem" Size="50,20">
+	<OnClick>
+	<DbDetails mode="update" fcsm="1">
+<DbTable>nursery.nursery_chargeitem</DbTable>
+<Required>%{dataRequired}</Required>
+<Requireless>%{dataRequireless}</Requireless>
+<Data>bm,mc,py,dw,dj,ty,bz</Data>
+<DataEx/>
+<Where>bm='%{bm}'</Where>
+<queryFormat>update %{table} set %{data} where %{where}</queryFormat></DbDetails>
+	<submit namelist="DbDetails"/><if cond="%{refreshAfterEdit}"><submit next="nursery_chargeitemLst"/></if>
+	</OnClick>
+	</Button><TAB/>
+<Button Text="reset" ToolTip="ttp_resetnursery_chargeitem" Name="resetnursery_chargeitem" Size="50,20">
+	<OnClick>
+	<submit next="GBDEDITnursery_chargeitem" function="reset"/>
+	</OnClick>
+	</Button><TAB/>
+<Button Text="gsearch" ToolTip="ttp_gsearchnursery_chargeitem" Name="gsearchnursery_chargeitem" Size="50,20" visible="false">
+	<OnClick>
+	<search next="nursery_chargeitemLst" listed="0" prefixwhere="0" inputed="1"><zone_id op="(" ref=""/></search><submit next="GBDEDITnursery_chargeitem" namelist="search" function="search"/>
+	</OnClick>
+	</Button><TAB/>
+</Ctrls></GroupBox>

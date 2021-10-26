@@ -1,0 +1,32 @@
+﻿<GroupBox Name="GBDEDITnursery_acc_period"><Ctrls>
+<GroupBox Name="GB_periodyear" Multiline="0" cols="xs12 sm6 md4 lg3"><Ctrls>
+<Label Name="lb_periodyear" Size="60,20" Text="periodyear" Align="Right"/>
+<ComboBox Name="periodyear" Size="170,100" Text="" Weight="170" Items="2000~2099" ToolTip="ttp_periodyear"></ComboBox>
+</Ctrls></GroupBox>
+<GroupBox Name="GB_periodmonth" Multiline="0" cols="xs12 sm6 md4 lg3"><Ctrls>
+<Label Name="lb_periodmonth" Size="60,20" Text="periodmonth" Align="Right"/>
+<ComboBox Name="periodmonth" Size="170,100" Text="" Weight="170" Items="1~12" ToolTip="ttp_periodmonth"></ComboBox>
+</Ctrls></GroupBox>
+<GroupBox Name="GB_daynum" Multiline="0" cols="xs12 sm6 md4 lg3"><Ctrls>
+<Label Name="lb_daynum" Size="60,20" Text="daynum" Align="Right"/>
+<ComboBox Name="daynum" Size="170,100" Text="" Weight="170" Items="1~31" ToolTip="ttp_daynum"></ComboBox>
+</Ctrls></GroupBox>
+<BR AutoHeight="1"/><GroupBox Name="GB_cannum" Multiline="0" cols="xs12 sm6 md4 lg3"><Ctrls>
+<Label Name="lb_cannum" Size="60,20" Text="cannum" Align="Right"/>
+<ComboBox Name="cannum" Size="170,100" Text="" Weight="170" Items="1~31*2" ToolTip="ttp_cannum"></ComboBox>
+</Ctrls></GroupBox>
+<GroupBox Name="GB_bz" Multiline="0" cols="xs12 sm6 md4 lg3"><Ctrls>
+<Label Name="lb_bz" Size="60,20" Text="bz" Align="Right"/>
+<TextBox Name="bz" Size="170,20" Text="" Weight="170" ToolTip="ttp_bz"></TextBox>
+</Ctrls></GroupBox>
+<GroupBox Name="GB_isnow" Multiline="0" cols="xs12 sm6 md4 lg3"><Ctrls>
+<CheckBox Name="isnow" Size="230,20" Text="isnow" ToolTip="ttp_isnow"></CheckBox>
+</Ctrls></GroupBox>
+<BR AutoHeight="1"/><GroupBox Name="GB_isover" Multiline="0" cols="xs12 sm6 md4 lg3"><Ctrls>
+<CheckBox Name="isover" Size="230,20" Text="isover" ToolTip="ttp_isover"></CheckBox>
+</Ctrls></GroupBox>
+<GroupBox Name="GB_periodid" Multiline="0" cols="xs12 sm6 md4 lg3" Visible="false" overlap="pre"><Ctrls>
+<Label Name="lb_periodid" Size="60,20" Text="periodid" Align="Right" Visible="false" overlap="pre" readonly="true"/>
+<TextBox Name="periodid" Size="170,20" Text="" Weight="170" ToolTip="ttp_periodid" Visible="false" overlap="pre" readonly="true"><OnEnChange><if cond="'%{periodid}'"><SetVisible name="insertnursery_acc_period" Visible="0"/><SetVisible name="modifynursery_acc_period" Visible="1"/><else/><SetVisible name="insertnursery_acc_period" Visible="1"/><SetVisible name="modifynursery_acc_period" Visible="0"/></if></OnEnChange></TextBox>
+</Ctrls></GroupBox>
+</Ctrls></GroupBox>

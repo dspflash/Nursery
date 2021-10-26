@@ -1,0 +1,13 @@
+﻿<WndTap Name="nursery_chargetplst" Text="nursery_chargetplst" Ver="2">
+<var name="refreshAfterEdit" expr="0"/>
+<var name="dataRequired" expr=""/>
+<var name="dataRequireless" expr=""/>
+<xi:include href="lan\nursery_chargetplst.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<Ctrls>
+<GroupBox  Name="GBnursery_chargetplst" id="nursery_chargetplst" Text="nursery_chargetplst" Size="100,100"><Ctrls>
+<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="nursery_chargetplst_GBDEDIT.xml"/>
+<BR AutoHeight="1"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="nursery_chargetplst_GBOPE.xml"/>
+<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="nursery_chargetplst_Vh.xml"/></Ctrls></GroupBox></Ctrls>
+	<OnChanged></OnChanged>
+	<OnActivate><SetVisible name="insertnursery_chargetplst" Visible="1"/><SetVisible name="modifynursery_chargetplst" Visible="0"/></OnActivate>
+</WndTap>

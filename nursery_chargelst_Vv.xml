@@ -1,0 +1,17 @@
+﻿<GroupBox Name="GBDVnursery_chargelst" cols="xs12 sm12 md12 lg12"><Ctrls>
+<ListCtrl Name="nursery_chargelst_vLst" ToolTip="ttp_nursery_chargelst" Size="700,420" OnLoad="init" loadedclick="0">
+	<DbDetails >
+<DbTable>nursery.nursery_chargelst n left join nursery.nursery_grade n0 on n.nj=n0.bm left join nursery.nursery_class n1 on n.bj=n1.bm left join nursery.nursery_children n2 on n.yebm=n2.bm left join nursery.nursery_acc_period n3 on n.period=n3.periodid left join nursery.nursery_chargeitem n4 on n.sfbm=n4.bm</DbTable>
+<Index>id</Index>
+<Data>n0.mc nj,n1.mc bj,n2.name yebm,concat(PeriodYear,PeriodMonth) as period,n.rq,n.lsh,n4.mc sfbm,n.sl,n.dj,n.yjz,n.czy,n.bz,n.id</Data>
+<Order>id</Order></DbDetails>
+<operator refresh="1" firstpage="1" prepage="1" nextpage="1">
+<op text="modify"><DbDetails><Where>id='%{nursery_chargelst_vLst[id]}'</Where></DbDetails><submit namelist="DbDetails" next="$this.nursery_chargelst.nursery_chargelstLst"/></op>
+<op text="delete" needconfirm="1"><DbDetails>
+<DbTable>nursery.nursery_chargelst</DbTable>
+<Where>id='%{nursery_chargelst_vLst[id]}'</Where>
+<queryFormat>delete from %{table} where %{where}</queryFormat></DbDetails>
+<submit namelist="DbDetails"/><submit/></op>
+</operator>
+</ListCtrl>
+</Ctrls></GroupBox>

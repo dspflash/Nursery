@@ -1,0 +1,84 @@
+﻿<GroupBox Name="GBDEDITnursery_chargelst"><Ctrls>
+<GroupBox cols="xs12 sm6 md4 lg3" Multiline="0" Name="GB_nj"><Ctrls>
+<Label Align="Right" Text="nj" onload="init" Name="lb_nj" Size="60,20"/>
+<ComboBox Weight="170" Text="" ToolTip="ttp_nj" onload="init" Name="nj" Size="170,100">
+	<DbDetails>
+<DbTable>nursery.nursery_grade</DbTable>
+<Index>bm</Index>
+<Data>mc,bm</Data>
+<Where/>
+<queryFormat/></DbDetails></ComboBox>
+</Ctrls></GroupBox>
+<GroupBox cols="xs12 sm6 md4 lg3" Multiline="0" Name="GB_bj"><Ctrls>
+<Label Align="Right" Text="bj" onload="init" Name="lb_bj" Size="60,20"/>
+<ComboBox Weight="170" Text="" ToolTip="ttp_bj" onload="init" Name="bj" Size="170,100">
+	<DbDetails>
+<DbTable>nursery.nursery_class</DbTable>
+<Index>bm</Index>
+<Data>mc,bm</Data>
+<Where/>
+<queryFormat/></DbDetails></ComboBox>
+</Ctrls></GroupBox>
+<GroupBox cols="xs12 sm6 md4 lg3" Multiline="0" Name="GB_yebm"><Ctrls>
+<Label Align="Right" Text="yebm" onload="init" Name="lb_yebm" Size="60,20"/>
+<ComboBox Weight="170" Text="" ToolTip="ttp_yebm" onload="init" Name="yebm" Size="170,100">
+	<DbDetails>
+<DbTable>nursery.nursery_children</DbTable>
+<Index>bm</Index>
+<Data>name,bm</Data>
+<Where/>
+<queryFormat/></DbDetails></ComboBox>
+</Ctrls></GroupBox>
+<BR AutoHeight="1"/><GroupBox cols="xs12 sm6 md4 lg3" Multiline="0" Name="GB_period"><Ctrls>
+<Label Align="Right" Text="period" onload="init" Name="lb_period" Size="60,20"/>
+<ComboBox Weight="170" Text="" ToolTip="ttp_period" onload="init" Name="period" Size="170,100">
+	<DbDetails>
+<DbTable>nursery.nursery_acc_period</DbTable>
+<Index>periodid</Index>
+<Data>concat(PeriodYear,PeriodMonth) as period,PeriodID</Data>
+<Where/>
+<queryFormat/></DbDetails></ComboBox>
+</Ctrls></GroupBox>
+<GroupBox cols="xs12 sm6 md4 lg3" Multiline="0" Name="GB_rq"><Ctrls>
+<Label Align="Right" Text="rq" Name="lb_rq" Size="60,20"/>
+<DateTime Weight="170" Text="" ToolTip="ttp_rq" Name="rq" Size="170,20" Format="yyyy-MM-dd HH:mm:ss"/>
+</Ctrls></GroupBox>
+<GroupBox cols="xs12 sm6 md4 lg3" Multiline="0" Name="GB_lsh"><Ctrls>
+<Label Align="Right" Text="lsh" Name="lb_lsh" Size="60,20"/>
+<TextBox Weight="170" Text="" ToolTip="ttp_lsh" Name="lsh" Size="170,20"/>
+</Ctrls></GroupBox>
+<BR AutoHeight="1"/><GroupBox cols="xs12 sm6 md4 lg3" Multiline="0" Name="GB_sfbm"><Ctrls>
+<Label Align="Right" Text="sfbm" onload="init" Name="lb_sfbm" Size="60,20"/>
+<ComboBox Weight="170" Text="" ToolTip="ttp_sfbm" onload="init" Name="sfbm" Size="170,100">
+	<DbDetails>
+<DbTable>nursery.nursery_chargeitem</DbTable>
+<Index>bm</Index>
+<Data>mc,bm</Data>
+<Where/>
+<queryFormat/></DbDetails></ComboBox>
+</Ctrls></GroupBox>
+<GroupBox cols="xs12 sm6 md4 lg3" Multiline="0" Name="GB_sl"><Ctrls>
+<Label Align="Right" Text="sl" Name="lb_sl" Size="60,20"/>
+<TextBox Weight="170" Text="" ToolTip="ttp_sl" Name="sl" Size="170,20"/>
+</Ctrls></GroupBox>
+<GroupBox cols="xs12 sm6 md4 lg3" Multiline="0" Name="GB_dj"><Ctrls>
+<Label Align="Right" Text="dj" Name="lb_dj" Size="60,20"/>
+<TextBox Weight="170" Text="" ToolTip="ttp_dj" Name="dj" Size="170,20"/>
+</Ctrls></GroupBox>
+<BR AutoHeight="1"/><GroupBox cols="xs12 sm6 md4 lg3" Multiline="0" Name="GB_yjz"><Ctrls>
+<Label Align="Right" Text="yjz" Name="lb_yjz" Size="60,20"/>
+<TextBox Weight="170" Text="" ToolTip="ttp_yjz" Name="yjz" Size="170,20"/>
+</Ctrls></GroupBox>
+<GroupBox cols="xs12 sm6 md4 lg3" Multiline="0" Name="GB_czy"><Ctrls>
+<Label Align="Right" Text="czy" Name="lb_czy" Size="60,20"/>
+<TextBox Weight="170" Text="" ToolTip="ttp_czy" Name="czy" Size="170,20"/>
+</Ctrls></GroupBox>
+<GroupBox cols="xs12 sm6 md4 lg3" Multiline="0" Name="GB_bz"><Ctrls>
+<Label Align="Right" Text="bz" Name="lb_bz" Size="60,20"/>
+<TextBox Weight="170" Text="" ToolTip="ttp_bz" Name="bz" Size="170,20"/>
+</Ctrls></GroupBox>
+<GroupBox cols="xs12 sm6 md4 lg3" Multiline="0" overlap="pre" Name="GB_id" Visible="false"><Ctrls>
+<Label Align="Right" Text="id" overlap="pre" Name="lb_id" readonly="true" Size="60,20" Visible="false"/>
+<TextBox Weight="170" Text="" ToolTip="ttp_id" overlap="pre" Name="id" readonly="true" Size="170,20" Visible="false"><OnEnChange><if cond="'%{id}'"><SetVisible name="insertnursery_chargelst" Visible="0"/><SetVisible name="modifynursery_chargelst" Visible="1"/><else/><SetVisible name="insertnursery_chargelst" Visible="1"/><SetVisible name="modifynursery_chargelst" Visible="0"/></if></OnEnChange></TextBox>
+</Ctrls></GroupBox>
+</Ctrls></GroupBox>

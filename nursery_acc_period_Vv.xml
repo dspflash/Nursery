@@ -1,0 +1,17 @@
+﻿<GroupBox Name="GBDVnursery_acc_period" cols="xs12 sm12 md12 lg12"><Ctrls>
+<ListCtrl Name="nursery_acc_period_vLst" ToolTip="ttp_nursery_acc_period" Size="700,420" OnLoad="init" loadedclick="0">
+	<DbDetails >
+<DbTable>nursery.nursery_acc_period n</DbTable>
+<Index>periodid</Index>
+<Data>n.periodyear,n.periodmonth,n.daynum,n.cannum,n.bz,n.isnow,n.isover,n.periodid</Data>
+<Order>periodid</Order></DbDetails>
+<operator refresh="1" firstpage="1" prepage="1" nextpage="1">
+<op text="modify"><DbDetails><Where>periodid='%{nursery_acc_period_vLst[periodid]}'</Where></DbDetails><submit namelist="DbDetails" next="$this.nursery_acc_period.nursery_acc_periodLst"/></op>
+<op text="delete" needconfirm="1"><DbDetails>
+<DbTable>nursery.nursery_acc_period</DbTable>
+<Where>periodid='%{nursery_acc_period_vLst[periodid]}'</Where>
+<queryFormat>delete from %{table} where %{where}</queryFormat></DbDetails>
+<submit namelist="DbDetails"/><submit/></op>
+</operator>
+</ListCtrl>
+</Ctrls></GroupBox>

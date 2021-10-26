@@ -1,0 +1,26 @@
+﻿<GroupBox Name="GBDEDITnursery_chargetp"><Ctrls>
+<GroupBox Name="GB_bm" Multiline="0" cols="xs12 sm6 md4 lg3"><Ctrls>
+<Label Name="lb_bm" Size="60,20" Text="bm" Align="Right"/>
+<TextBox Name="bm" Size="170,20" Text="" Weight="170" ToolTip="ttp_bm"></TextBox>
+</Ctrls></GroupBox>
+<GroupBox Name="GB_mc" Multiline="0" cols="xs12 sm6 md4 lg3"><Ctrls>
+<Label Name="lb_mc" Size="60,20" Text="mc" Align="Right"/>
+<TextBox Name="mc" Size="170,20" Text="" Weight="170" ToolTip="ttp_mc"></TextBox>
+</Ctrls></GroupBox>
+<GroupBox Name="GB_py" Multiline="0" cols="xs12 sm6 md4 lg3"><Ctrls>
+<Label Name="lb_py" Size="60,20" Text="py" Align="Right"/>
+<TextBox Name="py" Size="170,20" Text="" Weight="170" ToolTip="ttp_py"></TextBox>
+</Ctrls></GroupBox>
+<BR AutoHeight="1"/><GroupBox Name="GB_sl" Multiline="0" cols="xs12 sm6 md4 lg3"><Ctrls>
+<Label Name="lb_sl" Size="60,20" Text="sl" Align="Right"/>
+<TextBox Name="sl" Size="170,20" Text="" Weight="170" ToolTip="ttp_sl"></TextBox>
+</Ctrls></GroupBox>
+<GroupBox Name="GB_sfxm" Multiline="0" cols="xs12 sm6 md4 lg3"><Ctrls>
+<Label Name="lb_sfxm" Size="60,20" Text="sfxm" Align="Right"/>
+<TextBox Name="sfxm" Size="170,20" Text="" Weight="170" ToolTip="ttp_sfxm"></TextBox>
+</Ctrls></GroupBox>
+<GroupBox Name="GB_id" Multiline="0" cols="xs12 sm6 md4 lg3"><Ctrls>
+<Label Name="lb_id" Size="60,20" Text="id" Align="Right"/>
+<TextBox Name="id" Size="170,20" Text="" Weight="170" ToolTip="ttp_id"></TextBox>
+</Ctrls></GroupBox>
+</Ctrls></GroupBox>

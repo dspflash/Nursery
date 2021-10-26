@@ -1,0 +1,42 @@
+<Language name="nursery_payment">
+<Lang name="nursery_payment" value="缴费"/>
+<Lang name="rq" value="日期"/>
+<Lang name="ttp_rq" value=""/>
+<Lang name="lsh" value="流水号"/>
+<Lang name="ttp_lsh" value=""/>
+<Lang name="fph" value="发票号码"/>
+<Lang name="ttp_fph" value=""/>
+<Lang name="ys" value="应收"/>
+<Lang name="ttp_ys" value="Receivables"/>
+<Lang name="yh" value=""/>
+<Lang name="ttp_yh" value=""/>
+<Lang name="ss" value="实收"/>
+<Lang name="ttp_ss" value="Real receivables"/>
+<Lang name="sqye" value="上期结余"/>
+<Lang name="ttp_sqye" value="The period balances"/>
+<Lang name="bqye" value="本期结余"/>
+<Lang name="ttp_bqye" value="The current balance"/>
+<Lang name="fines" value=""/>
+<Lang name="ttp_fines" value=""/>
+<Lang name="czy" value="操作员"/>
+<Lang name="ttp_czy" value=""/>
+<Lang name="zffs" value="支付方式"/>
+<Lang name="ttp_zffs" value=""/>
+<Lang name="bz" value="备注"/>
+<Lang name="ttp_bz" value=""/>
+<Lang name="id" value=""/>
+<Lang name="ttp_id" value=""/>
+<Lang name="ttp_operationnursery_payment" value="操作"/>
+<Lang name="ttp_createnursery_payment" value="新增"/>
+<Lang name="ttp_modifynursery_payment" value="修改"/>
+<Lang name="ttp_deletenursery_payment" value="删除"/>
+<Lang name="ttp_refreshnursery_payment" value="刷新"/>
+<Lang name="operation" value="操作"/>
+<Lang name="create" value="新增"/>
+<Lang name="modify" value="修改"/>
+<Lang name="delete" value="删除"/>
+<Lang name="refresh" value="刷新"/>
+<Lang name="firstpage" value="首页"/>
+<Lang name="prepage" value="上页"/>
+<Lang name="nextpage" value="下页"/>
+</Language>

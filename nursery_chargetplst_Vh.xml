@@ -1,0 +1,12 @@
+﻿<GroupBox Name="GBDVnursery_chargetplst" cols="xs12 sm12 md12 lg12" visible="0"><Ctrls>
+<ListCtrl Name="nursery_chargetplstLst" ToolTip="ttp_nursery_chargetplst" Size="70,20" visible="0" loadedclick="1">
+	<DbDetails fcsm="1">
+<DbTable>nursery.nursery_chargetplst</DbTable>
+<Index>id</Index>
+<Data>bm,lb,mc,dw,sl,dj,je,lbmc,id</Data>
+<Order>id</Order></DbDetails>
+<OnClick><assign name="bm[bm]" expr="%{nursery_chargetplstLst[bm]}" function="SetSel"/><assign name="lb[bm]" expr="%{nursery_chargetplstLst[lb]}" function="SetSel"/>
+<if cond="%{id}"><SetVisible name="insertnursery_chargetplst" Visible="0"/><SetVisible name="modifynursery_chargetplst" Visible="1"/></if>
+</OnClick>
+</ListCtrl>
+</Ctrls></GroupBox>

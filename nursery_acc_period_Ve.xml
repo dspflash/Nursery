@@ -1,0 +1,13 @@
+﻿<WndTap Name="nursery_acc_period" Text="nursery_acc_period" Ver="2">
+<var name="refreshAfterEdit" expr="0"/>
+<var name="dataRequired" expr=""/>
+<var name="dataRequireless" expr=""/>
+<xi:include href="lan\nursery_acc_period.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<Ctrls>
+<GroupBox  Name="GBnursery_acc_period" id="nursery_acc_period" Text="nursery_acc_period" Size="100,100"><Ctrls>
+<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="nursery_acc_period_GBDEDIT.xml"/>
+<BR AutoHeight="1"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="nursery_acc_period_GBOPE.xml"/>
+<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="nursery_acc_period_Vh.xml"/></Ctrls></GroupBox></Ctrls>
+	<OnChanged></OnChanged>
+	<OnActivate><SetVisible name="insertnursery_acc_period" Visible="1"/><SetVisible name="modifynursery_acc_period" Visible="0"/></OnActivate>
+</WndTap>

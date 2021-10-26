@@ -1,0 +1,17 @@
+﻿<GroupBox Name="GBDVnursery_chargetplst" cols="xs12 sm12 md12 lg12"><Ctrls>
+<ListCtrl Name="nursery_chargetplst_vLst" ToolTip="ttp_nursery_chargetplst" Size="700,420" OnLoad="init" loadedclick="0">
+	<DbDetails >
+<DbTable>nursery.nursery_chargetplst n left join nursery.nursery_chargeitem n0 on n.bm=n0.bm left join nursery.nursery_chargetp n1 on n.lb=n1.bm</DbTable>
+<Index>id</Index>
+<Data>n0.mc bm,n1.mc lb,n.mc,n.dw,n.sl,n.dj,n.je,n.lbmc,n.id</Data>
+<Order>id</Order></DbDetails>
+<operator refresh="1" firstpage="1" prepage="1" nextpage="1">
+<op text="modify"><DbDetails><Where>id='%{nursery_chargetplst_vLst[id]}'</Where></DbDetails><submit namelist="DbDetails" next="$this.nursery_chargetplst.nursery_chargetplstLst"/></op>
+<op text="delete" needconfirm="1"><DbDetails>
+<DbTable>nursery.nursery_chargetplst</DbTable>
+<Where>id='%{nursery_chargetplst_vLst[id]}'</Where>
+<queryFormat>delete from %{table} where %{where}</queryFormat></DbDetails>
+<submit namelist="DbDetails"/><submit/></op>
+</operator>
+</ListCtrl>
+</Ctrls></GroupBox>

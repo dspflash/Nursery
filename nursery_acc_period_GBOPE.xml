@@ -1,0 +1,37 @@
+﻿<GroupBox cols="xs12 sm12 md12 lg12" Name="GBOPEnursery_acc_period" Size="100,100"><Ctrls>
+<Button sqlpkinsert="periodid" Text="create" ToolTip="ttp_createnursery_acc_period" Name="insertnursery_acc_period" Size="50,20">
+	<OnClick>
+	<DbDetails mode="insert" fcsm="1">
+<DbTable>nursery.nursery_acc_period</DbTable>
+<Required>%{dataRequired}</Required>
+<Requireless>%{dataRequireless}</Requireless>
+<Data>periodyear,periodmonth,daynum,cannum,bz,isnow,isover</Data>
+<DataEx/>
+<queryFormat>insert into %{table} %{data}</queryFormat></DbDetails>
+	<submit namelist="DbDetails"/><if cond="%{refreshAfterEdit}"><submit next="nursery_acc_periodLst"/></if>
+	</OnClick>
+	</Button><TAB/>
+<Button Text="modify" ToolTip="ttp_modifynursery_acc_period" Name="modifynursery_acc_period" Size="50,20">
+	<OnClick>
+	<DbDetails mode="update" fcsm="1">
+<DbTable>nursery.nursery_acc_period</DbTable>
+<Required>%{dataRequired}</Required>
+<Requireless>%{dataRequireless}</Requireless>
+<Data>periodyear,periodmonth,daynum,cannum,bz,isnow,isover</Data>
+<DataEx/>
+<Where>periodid='%{periodid}'</Where>
+<queryFormat>update %{table} set %{data} where %{where}</queryFormat></DbDetails>
+	<submit namelist="DbDetails"/><if cond="%{refreshAfterEdit}"><submit next="nursery_acc_periodLst"/></if>
+	</OnClick>
+	</Button><TAB/>
+<Button Text="reset" ToolTip="ttp_resetnursery_acc_period" Name="resetnursery_acc_period" Size="50,20">
+	<OnClick>
+	<submit next="GBDEDITnursery_acc_period" function="reset"/>
+	</OnClick>
+	</Button><TAB/>
+<Button Text="gsearch" ToolTip="ttp_gsearchnursery_acc_period" Name="gsearchnursery_acc_period" Size="50,20" visible="false">
+	<OnClick>
+	<search next="nursery_acc_periodLst" listed="0" prefixwhere="0" inputed="1"><zone_id op="(" ref=""/></search><submit next="GBDEDITnursery_acc_period" namelist="search" function="search"/>
+	</OnClick>
+	</Button><TAB/>
+</Ctrls></GroupBox>

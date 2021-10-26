@@ -1,0 +1,14 @@
+﻿<WndTap Name="nursery_children_v" Text="nursery_children">
+<WndTaps>
+<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="nursery_children_Ve.xml" popup="1"/>
+</WndTaps>
+<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="lan\nursery_children.xml"/>
+<Ctrls><GroupBox  Name="GBnursery_children" id="nursery_children" Text="nursery_children" Size="100,100"><Ctrls>
+<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="nursery_children_Vs.xml"/>
+<BR AutoHeight="1"/><GroupBox  Name="GBOPVnursery_children" Size="100,20" cols="xs12 sm12 md12 lg12"><Ctrls>
+<Button Text="addone" ToolTip="ttp_addone" Name="addone" Size="50,20">	<OnClick><submit next="$this.nursery_children.GBDEDITnursery_children" function="reset"/></OnClick>	</Button><TAB/>	
+<Button Text="reset" ToolTip="ttp_resetnursery_children" Name="resetnursery_children" Size="50,20">	<OnClick>	<submit next="GBDEDITnursery_children" function="reset"/>	</OnClick>	</Button><TAB/>	
+<Button Text="gsearch" ToolTip="ttp_gsearchnursery_children" Name="gsearchnursery_children" Size="50,20" visible="true">	<OnClick>	<search next="nursery_children_vLst" listed="0" prefixwhere="0" inputed="1"></search><submit next="GBDEDITnursery_children" namelist="search" function="search"/>	</OnClick>	</Button><TAB/></Ctrls></GroupBox>
+<BR AutoHeight="1"/><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="nursery_children_Vv.xml"/>
+</Ctrls></GroupBox>
+</Ctrls></WndTap>

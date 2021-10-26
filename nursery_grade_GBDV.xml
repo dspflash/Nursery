@@ -1,0 +1,17 @@
+﻿<GroupBox cols="xs12 sm12 md12 lg12" Name="GBDVnursery_grade"><Ctrls>
+<ListCtrl loadedclick="0" ToolTip="ttp_nursery_grade" Name="nursery_gradeLst" Size="700,420">
+	<DbDetails fcsm="1">
+<DbTable>nursery.nursery_grade</DbTable>
+<Index>bm</Index>
+<Data>bm,mc,py</Data>
+<Order>bm</Order></DbDetails>
+<operator firstpage="1" nextpage="1" refresh="1" prepage="1">
+<op text="modify"><DbDetails><Where>bm='%{nursery_grade_vLst[bm]}'</Where></DbDetails><submit next="$this.nursery_grade.nursery_gradeLst" namelist="DbDetails"/></op>
+<op text="delete" needconfirm="1"><DbDetails>
+<DbTable>nursery.nursery_grade</DbTable>
+<Where>bm='%{nursery_grade_vLst[bm]}'</Where>
+<queryFormat>delete from %{table} where %{where}</queryFormat></DbDetails>
+<submit namelist="DbDetails"/><submit/></op>
+</operator>
+</ListCtrl>
+</Ctrls></GroupBox>
